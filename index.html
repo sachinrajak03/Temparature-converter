@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Temperature Converter</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <style>
+        
+
+    </style>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="heading">Temperature Converter <i class="fa-solid fa-temperature-three-quarters"></i></h1>
+        <form>
+            <div class="upperBlock">
+                <fieldset class="from">
+                    <legend>From </legend>
+                    <select name="From" id="dropdown1" onchange="updateDropdownOptions('dropdown2', this.value)" From>
+                        <option value="Fahrenheit" from-F selected="selected">Fahrenheit</option>
+                        <option value="Celcius" from-C>Celcius</option>
+                        <option value="Kelvin" from-K>Kelvin</option>
+                        
+                    </select>
+                </fieldset>
+                <fieldset class="to">
+                    <legend>To </legend>
+                    <select name="To" id="dropdown2" onchange="updateDropdownOptions( 'dropdown1', this.value)" To>
+                        <option value="Celcius" to-C selected="selected">Celcius</option>
+                        <option value="Fahrenheit" to-F>Fahrenheit</option>
+                        <option value="Kelvin" to-K>Kelvin</option>
+                        
+                    </select>
+                </fieldset>
+            </div>
+            <div class="lowerBlock">
+                <fieldset>
+                    <legend>Enter</legend>
+                    <input type="number" class="input"  step="any" Input>
+                </fieldset>
+                <fieldset>
+                    <legend>Converted</legend>
+                    <input disabled="disabled" type="text" output>
+                </fieldset>
+            </div>
+            <button onclick="convert()" type="button" >
+                Convert
+            </button>
+
+        </form>
+        
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4cd24ffc8a.js" crossorigin="anonymous"></script>
+</body>
+</html>

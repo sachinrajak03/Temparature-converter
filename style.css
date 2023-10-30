@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.wrapper
+{
+    box-sizing: border-box;
+
+    background: rgb(52, 107, 226);
+
+    background: linear-gradient(0deg, rgb(49, 102, 216) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+    background: -moz-linear-gradient(0deg, rgb(45, 97, 209) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+    background: -webkit-linear-gradient(180deg, rgb(26, 80, 197) 0%, hsla(220, 78%, 29%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1 );
+
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    padding-top: 120px;
+    padding-bottom: 60px;
+    
+}
+form{
+    background-color: rgba(169, 184, 184, 0.295);
+    border-radius: 20px;
+    max-width: 80%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding:30px;
+}
+.upperBlock{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width:100%;
+    justify-content: space-evenly;
+}
+.from
+{
+    width:40%
+}
+.to{
+    width:40%
+}
+select{
+    width: 100%;
+    background: transparent;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px;
+}
+option{
+    background:#bac5be ;
+    cursor: pointer;
+}
+fieldset
+{
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+}
+option{
+    color:rgb(0, 0, 0)
+}
+.lowerBlock
+{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-evenly;
+}
+.lowerBlock fieldset{
+    width:40%;
+}
+
+input{
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+i{
+    position: relative;
+    top:6px;
+    scale: 1.2em;
+}
+
+
+button{
+    background: rgba(7, 66, 155, 0.774);
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(1, 45, 112, 0.774);
+}
+
+@media only screen and (max-width: 768px) {
+
+    h1{
+        font-size: 25px;
+    }
+    .upperBlock
+    {
+        display: block;
+        padding: 0;
+    }
+    .to , .from, fieldset{
+        width: 70%;
+        margin: 0 auto;
+    }
+    form{
+        gap: 20px;
+    }
+    .lowerBlock
+    {
+       display: block;
+    }
+    h1{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    
+  }
